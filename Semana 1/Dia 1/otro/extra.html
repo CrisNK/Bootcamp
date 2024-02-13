@@ -1,0 +1,72 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Extra</title>
+</head>
+
+<body>
+    <h1>Esta es la sección extra</h1>
+    <a href="./../index.html">De vuelta al índice</a>
+
+    <form>
+        <div>
+            <label for="miNombre">Nombre: </label>
+            <input placeholder="primer nombre" value="Cristóbal" type="text" name="miNombre" id="miNombre">
+        </div>
+        <div>
+            <!-- Otro div hace que sea una división, es decir que se colocará abajo en vez de al lado derecho de "Nombre:"-->
+            <label for="miContraseña">Contraseña: </label>
+            <input type="password" name="miContraseña" id="miContraseña">
+        </div>
+
+        <div>
+            <label for="miFecha">Fecha de nacimiento: </label>
+            <input type="date" name="miFecha" id="miFecha">
+        </div>
+
+        <div>
+            <h2>Sexo</h2>
+            <label for="masculino">Masculino:</label>
+            <input type="radio" name="sexo" id="masculino">
+            <label for="femenino">Femenino:</label>
+            <input type="radio" name="sexo" id="femenino">
+            <label for="otro">Otro:</label>
+            <input type="radio" name="sexo" id="otro">
+        </div>
+
+        <h2> Lenguajes que dominas </h2>
+        <div>
+            <label for="html">HTML</label>
+            <input type="checkbox" id="html" name="lenguajes">
+        </div>
+        <div>
+            <label for="css">CSS</label>
+            <input type="checkbox" id="css" name="lenguajes">
+        </div>
+        <div>
+            <label for="javascript">JavaScript</label>
+            <input type="checkbox" id="javascript" name="lenguajes">
+        </div>
+
+        <div>
+            <label for="miPais">País de residencia:</label>
+            <select name="miPais" id="miPais">
+                <option value="CH">Chile</option>
+                <option value="MX">México</option>
+                <option value="CA">Canadá</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="comentario">Comentario</label>
+            <textarea maxlength="10" name="comentario" id="comentario" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <button>Enviar</button>
+            <button>Cancelar</button>
+        </div>
+    </form>
+</body>
+
+</html>
