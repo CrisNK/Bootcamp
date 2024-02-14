@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="es">
     <head>
         <meta charset="UTF-8">
         <title>Formulario de registro</title>
@@ -35,22 +35,20 @@
                 <tr>
                     <td><label for="birthday">Cumpleaños: </label></td>
                     <td><input type="date" name="birthday" id="birthday"></td>
-                    <td><img src="regalo.png" alt="regalo"></td>
                 </tr>
-                <td>
-                    <label for="gender">Masculino</label>
-                    <input type="radio" name="gender" id="male">
-                </td>
-                <td>
-                    <label for="gender">Femenino</label>
-                    <input type="radio" name="gender" id="female">
-                </td>
-                <td>
-                    <label for="gender">Otro: </label>
-                    <input type="radio" name="gender" id="other">
-                    <td><input type="text" name="gender" id="gender"></td>
-                </td>
             </table>
+
+            <div>
+                <label for="male">Masculino</label>
+                <input type="radio" name="gender" id="male">
+            
+                <label for="female">Femenino</label>
+                <input type="radio" name="gender" id="female">
+            
+                <label for="other">Otro </label>
+                <input type="radio" name="gender" id="other">
+                <input type="text" name="otherGender" id="otherGender">
+            </div>
 
             <label for="description">Una breve descripción de ti:</label>
             <br> <!-- Salto de línea -->
