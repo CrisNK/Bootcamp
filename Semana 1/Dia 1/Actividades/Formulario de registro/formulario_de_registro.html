@@ -1,77 +1,77 @@
 <!DOCTYPE html>
+
 <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulario de registro</title>
+        <meta name="metaDescription" content="Esta página se creó para poner en práctica los conocimientos adquiridos de clase de hoy. Bienvenido al registro.">
+    </head>
 
-<head>
-    <title>Formulario de registro</title>
-    <meta charset="UTF-8" name="description"
-        content="Esta página se creó para poner en práctica los conocimientos adquiridos de clase de hoy. Bienvenido al registro.">
-</head>
+    <body>
+        <h1>Mi Formulario de Registro</h1>
+        <form>
+            <table>
+                <tr>
+                    <td><label for="name">Nombre: </label></td>
+                    <td><input type="text" placeholder="Ingrese sus nombres" name="name" id="name"></td>
+                </tr>
+                <tr>
+                    <td><label for="lastName">Apellido: </label></td>
+                    <td><input type="text" placeholder="Ingrese sus apellidos" name="lastName" id="lastName"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email: </label></td>
+                    <td><input type="text" placeholder="ejemplo@ejemplo.com" name="email" id="email"></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Contraseña: </label></td>
+                    <td><input type="password" placeholder="Ingrese su contraseña" name="password" id="password"></td>
+                </tr>
+                <tr>
+                    <td><label for="confirmPassword">Confirmar: </label></td>
+                    <td><input type="password" placeholder="Confirme su contraseña" name="confirmPassword"
+                            id="confirmPassword"></td>
+                </tr>
+                <tr>
+                    <td><label for="birthday">Cumpleaños: </label></td>
+                    <td><input type="date" name="birthday" id="birthday"></td>
+                    <td><img src="regalo.png" alt="regalo"></td>
+                </tr>
+                <td>
+                    <label for="gender">Masculino</label>
+                    <input type="radio" name="gender" id="male">
+                </td>
+                <td>
+                    <label for="gender">Femenino</label>
+                    <input type="radio" name="gender" id="female">
+                </td>
+                <td>
+                    <label for="gender">Otro: </label>
+                    <input type="radio" name="gender" id="other">
+                    <td><input type="text" name="gender" id="gender"></td>
+                </td>
+            </table>
 
-<body>
-    <h1>Mi Formulario de Registro</h1>
-    <form>
-        <table>
-            <tr>
-                <td><label for="name">Nombre: </label></td>
-                <td><input type="text" placeholder="Ingrese sus nombres" name="name" id="name"></td>
-            </tr>
-            <tr>
-                <td><label for="lastName">Apellido: </label></td>
-                <td><input type="text" placeholder="Ingrese sus apellidos" name="lastName" id="lastName"></td>
-            </tr>
-            <tr>
-                <td><label for="email">Email: </label></td>
-                <td><input type="text" placeholder="ejemplo@ejemplo.com" name="email" id="email"></td>
-            </tr>
-            <tr>
-                <td><label for="password">Contraseña: </label></td>
-                <td><input type="password" placeholder="Ingrese su contraseña" name="password" id="password"></td>
-            </tr>
-            <tr>
-                <td><label for="confirmPassword">Confirmar: </label></td>
-                <td><input type="password" placeholder="Confirme su contraseña" name="confirmPassword" id="confirmPassword"></td>
-            </tr>
-            <tr>
-                <td><label for="birthday">Cumpleaños: </label></td>
-                <td><input type="date" name="birthday" id="birthday"></td>
-                <td><img src="regalo.png" alt="regalo"></td>
-            </tr>
-            <td>
-                <label for="gender">Masculino</label>
-                <input type="radio" name="gender" id="male">
-            </td>
-            <td>
-                <label for="gender">Femenino</label>
-                <input type="radio" name="gender" id="female">
-            </td>
-            <td>
-                <label for="gender">Otro: </label>
-                <input type="radio" name="gender" id="other">
-                <td><input type="text" name="gender" id="gender"></td>
-            </td>
-        </table>
+            <label for="description">Una breve descripción de ti:</label>
+            <br> <!-- Salto de línea -->
+            <textarea name="description" id="description" cols="30" rows="10"></textarea>
 
-        <label for="description">Una breve descripción de ti:</label>
-        <br> <!-- Salto de línea -->
-        <textarea name="description" id="description" cols="30" rows="10"></textarea>
+            <div>
+                <label for="favoriteLanguage">Lenguaje favorito: </label>
+                <select name="favoriteLanguage" id="favoriteLanguage">
+                    <option>C</option>
+                    <option>C++</option>
+                    <option>C#</option>
+                    <option>HTML</option>
+                    <option>CSS</option>
+                    <option>JavaScript</option>
+                    <option>Java</option>
+                    <option>Python</option>
+                    <option>Ensamblador</option>
+                </select>
+            </div>
 
-        <div>
-            <label for="favoriteLanguage">Lenguaje favorito: </label>
-            <select name="favoriteLanguage" id="favoriteLanguage">
-                <option>C</option>
-                <option>C++</option>
-                <option>C#</option>
-                <option>HTML</option>
-                <option>CSS</option>
-                <option>JavaScript</option>
-                <option>Java</option>
-                <option>Python</option>
-                <option>Ensamblador</option>
-            </select>
-        </div>
-
-        <div><button>Enviar</button></div>
-    </form>
-</body>
-
+            <div><button>Enviar</button></div>
+        </form>
+    </body>
 </html>
