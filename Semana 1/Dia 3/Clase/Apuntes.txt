@@ -27,6 +27,7 @@ border-radius: 5px;    // sirve para redondear el borde del contenido
 
 Orden de jerarquía para la aplicación de estilos en CSS
 # > . > elemento
+ID > Clase > elemento
 
 .buttons:hover{    // el hover hace que el estilo se aplique cuando pase el cursor por ahi.
     cursor: pointer;
