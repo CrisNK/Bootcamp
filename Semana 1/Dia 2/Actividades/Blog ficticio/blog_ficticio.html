@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Blog de mi artista favorito</title>
+        <meta name="description" content="¡Hola!, en este blog te presento a uno de mis artistas musicales favoritos que siempre me acompaña en mis momentos más prendidos.">
+    </head>
+
+    <body>
+        <h1>Daddy Yankee</h1>
+        <img src="https://i.scdn.co/image/ab67616100005174f9ad208bbff79c1ce09c77c1" alt="foto de perfil de Daddy Yankee"> <br>
+        <a href="https://open.spotify.com/intl-es/artist/4VMYDCV2IEDYJArk749S6m" target="_blank" >¡Encuéntralo en Spotify!</a>
+
+        <h3>Acerca de él</h3>
+        <p>Daddy Yankee, cuyo nombre real es Ramón Luis Ayala Rodríguez, <br> <!-- Estos '<br>' fueron agregados únicamente para que se vea visualmente mejor a mi gusto, aunque con CSS esto no sería necesario-->
+        es un cantante, rapero, compositor, actor y productor discográfico <br>
+        puertorriqueño, nacido el 3 de febrero de 1977 en San Juan, Puerto <br>
+        Rico. Es considerado uno de los pioneros del reguetón, un género de <br>
+        música urbana que ha alcanzado gran popularidad a nivel mundial.</p>
+        
+        <h3>Mis canciones favoritas</h3>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Título de la canción</th>
+                    <th>Año de lanzamiento</th>
+                    <th>Álbum</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Sígueme y te sigo</td>
+                    <td>2015</td>
+                    <td>Single</td>
+                </tr>
+                <tr>
+                    <td>BOMBÓN</td>
+                    <td>2004</td>
+                    <td>Legendaddy</td>
+                </tr>
+                <tr>
+                    <td>Llamado de emergencia</td>
+                    <td>2006</td>
+                    <td>Talento de Barrio</td>
+                </tr>
+                <tr>
+                    <td>Ella me levantó</td>
+                    <td>2007</td>
+                    <td>El Cartel: The Big Boss</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <h3>Datos curiosos de Daddy Yankee</h3>
+        <ul>
+            <li><strong>Apodo inspirado en el boxeo:</strong> El apodo "Daddy Yankee" se inspiró en el nombre de uno de sus boxeadores favoritos, Sugar Ray Leonard, cuyo apodo era "Ray Sugar". Ayala combinó "Daddy", que significa "papá" en inglés, con "Yankee" como un homenaje a su respeto por Leonard y su afición por el boxeo.</li>
+            <li><strong>Empresario exitoso:</strong> Además de su carrera musical, Daddy Yankee es un empresario exitoso. Ha incursionado en varios negocios, incluyendo su propia línea de ropa, fragancias y una compañía de entretenimiento. También ha invertido en bienes raíces y otras empresas, demostrando su visión empresarial.
+            </li>
+            <li><strong>Récord Guinness:</strong> En 2013, Daddy Yankee obtuvo un Récord Guinness por ser el primer artista de reguetón en recibir la certificación de Disco de Diamante por la RIAA (Recording Industry Association of America) por su álbum "Talento de Barrio". Este reconocimiento subraya su impacto y éxito en la industria musical.</li>
+        </ul>
+
+        <form>
+            <h2>Cuéntanos sobre tí</h2>
+            <div>
+                <p><strong>¿Te gusta Daddy Yankee?</strong></p>
+                <label for="yes">Si</label>
+                <input type="radio" name="doYouLikeDaddy" id="yes">
+                
+                <label for="no">No</label>
+                <input type="radio" name="doYouLikeDaddy" id="no">
+            </div>
+
+            <div>
+                <p><strong>De acuerdo a tus preferencias musicales califícalo del 1 al 10</strong></p>
+                <select name="qualification" id="qualification">
+                    <option value="">--</option> <!-- Lo que va en value es un valor para evaluarlo en el backend, mientras que lo que está en entre '> <' es para mostrarle esa opcion al usuario -->
+                    <option value="10">10</option>
+                    <option value="9">9</option>
+                    <option value="8">8</option>
+                    <option value="7">7</option>
+                    <option value="6">6</option>
+                    <option value="5">5</option>
+                    <option value="4">4</option>
+                    <option value="3">3</option>
+                    <option value="2">2</option>
+                    <option value="1">1</option>
+                </select>
+
+            </div>
+
+            <div>
+                <p><strong>Te invitamos a compartir la canción de Daddy Yankee u otro artista que más te guste</strong></p>
+                <label for="favoriteSong">Canción favorita</label>
+                <input type="text" placeholder="Opcional" name="favoriteSong" id="favoriteSong">
+            </div>
+
+            <div>
+                <p><strong>¿Conocías algunas de estas canciones?</strong></p>
+                <p>Selecciona la/s cancion/es que conoces previamente</p>
+
+                <input type="checkbox" id="siguemeYTeSigo" name="songsYouKnow">
+                <label for="siguemeYTeSigo">Sígueme y te sigo</label><br>
+
+                <input type="checkbox" id="bombon" name="songsYouKnow">
+                <label for="bombon">BOMBÓN</label><br>
+
+                <input type="checkbox" id="llamadoDeEmergencia" name="songsYouKnow">
+                <label for="llamadoDeEmergencia">Llamado de emergencia</label><br>
+
+                <input type="checkbox" id="ellaMeLevanto" name="songsYouKnow">
+                <label for="ellaMeLevanto">Ella me levantó</label>
+            </div>
+
+            <br><input type="submit" value="Enviar">
+        </form>
+    </body>
+</html>
