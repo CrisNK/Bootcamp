@@ -1,0 +1,34 @@
+Apuntes:
+Para aplicar estilo a una 'class': .nombre_de_la_class
+Para aplicar estilo a un 'id': #nombre_del_id
+Una cosa puede tener más de una clase, simplemente se separan por un espacio, ejemplo: class="clase1 clase2"
+La propiedad 'content' sirve para reemplazar un texto del HTML por el de CSS
+
+HTML
+<fieldset> </fieldset> = sirve para crear una linea de borde al rededor de un formulario
+<legend> </legend> = sirve para colocarle un titulo a la linea del borde que se creó con 'fieldset'
+
+CSS
+
+fieldset {
+    border: 20px dotted #DDDDDD;    // el dotted es el estilo que tendrá el borde, en este caso será con puntitos   
+}
+
+legend {
+    font-weight: bold;  // asigna el tamaño de la letra del titulo de 'legend'
+}
+
+#class{
+    display: block;    // convierte el texto en un bloque, es decir que como que el texto llega hasta el final del margen de donde se encuentre el texto
+    text-align: center;    // sirve para alinear un elemento de un texto
+}
+
+border-radius: 5px;    // sirve para redondear el borde del contenido
+
+Orden de jerarquía para la aplicación de estilos en CSS
+# > . > elemento
+
+.buttons:hover{    // el hover hace que el estilo se aplique cuando pase el cursor por ahi.
+    cursor: pointer;
+}
+
