@@ -1,4 +1,4 @@
-En este día se realizó una práctica de indentación un formulario para registrarse usando sólo HTML, y en clases se vieron conceptos básicos de HTML, lo cual hay contenido para ver lo visto en 'index.html' y en las carpetas 'Imagenes' y 'Otros'. En 'Actividades' se encontrarán las actividades 'core' y 'prácticas del curso'.
+En este día se realizó una práctica de indentación un formulario para registrarse usando sólo HTML, y en clases se vieron conceptos básicos de HTML, lo cual hay contenido para ver lo visto en 'index.html' y en las carpetas 'Imagenes' y 'Otros'. En 'Actividades' se encontrarán las actividades 'core' y 'prácticas' del curso.
 
 APUNTES:
 Esto es para mejorar la semántica del HTML
