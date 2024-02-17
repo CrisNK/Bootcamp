@@ -1,0 +1,1 @@
+Me di cuenta después de que la página se ve correctamente sólamente en pantalla completa y con mi resolución de pantalla (2560x1600), por lo que en caso de tener problemas de orden en el HTML, será debido a esto. No lo he corregido porque creo que este problema se resuelve con 'flex box', lo cual es contenido que se verá la próxima semana.
