@@ -1,0 +1,2 @@
+Introducción a CSS: Se aprendió a enlazar archivos de HTML con CSS, se aprendió a utilizar comandos básicos de CSS. 
+Ordenar, colorear etiquetas.
