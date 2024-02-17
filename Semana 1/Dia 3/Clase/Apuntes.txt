@@ -3,6 +3,13 @@ Para aplicar estilo a una 'class': .nombre_de_la_class
 Para aplicar estilo a un 'id': #nombre_del_id
 Una cosa puede tener más de una clase, simplemente se separan por un espacio, ejemplo: class="clase1 clase2"
 La propiedad 'content' sirve para reemplazar un texto del HTML por el de CSS
+Propiedades 'position':
+ + static = es la propiedad que viene por defecto en el estilo de CSS.
+ + absolute = esta propiedad ignora los demás elementos y se puede llegar como a sobreescribir, asi como si no existiera ningún elemento puesto ahí.
+ + relative = esta propiedad permite desplazar elementos desde la posición de inicio o por defecto de donde estaba puesto previamente.
+ + flex = esta propiedad permita que un elemento se desplace los valores asignados y además no se mueva de ahi cuando realice un 'scroll' por la página web
+
+ Para resolver los problemas entre navegadores, es recomendable utilizar ‘RESET’ y ‘NORMALIZE’ y definir cuáles debieran ser los atributos predeterminados (en vez de confiar en los valores predeterminados que vienen con cada navegador). De hecho, a los reclutadores les encanta preguntar sobre esto y ver si sabes como hacer que tu sitio se vea consistente en los diferentes navegadores. Cuando te pregunten esto, deberías poder explicar (con seguridad) qué significa reset/normalizing y por qué se utilizan. Además, deberías contarles que es importante validar  tu HTML/CSS a menudo, puesto que hacer esto te da una idea de cómo arreglar inconvenientes que podrían ocasionar problemas de compatibilidad entre navegadores (y frecuentemente, un HTML/CSS inválido puede conducir a un comportamiento extraño puesto que el navegador no arreglaría el HTML/CSS inválido de forma correcta).
 
 HTML
 <fieldset> </fieldset> = sirve para crear una linea de borde al rededor de un formulario
