@@ -1,0 +1,40 @@
+*{
+    /* outline: 1px solid red; */
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    background-color: #d4d2ae;
+}
+header {
+    display: flex;
+    justify-content:center;
+    align-items:flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
+header img {
+    background-color:white;
+    height: 60px;
+    width: 110px;
+}
+table {
+    margin-top: 10px;
+    display: flex;
+    justify-content:center;
+}
+main img {
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+}
+th, td {
+    border: 3px solid black;
+}
+/* Por temas prácticos de codificación busqué por internet un método para aplicar el estilo de fondo de color a las columnas pares e impares */
+td:nth-child(even) {
+    background-color: #f36870;
+}
+td:nth-child(odd) {
+    background-color: #82b4ee;
+}
