@@ -10,7 +10,6 @@
 }
 header{
     display:inline-block;
-    
 }
 header h1{
     padding: 10px 20px;
@@ -23,19 +22,17 @@ header h3{
     margin-top: 13px;
     margin-left:236px;
 }
-main {
-    background-image: linear-gradient(to right, #48353c, #6f5964, #48353c);
-    background-image: linear-gradient(to bottom, #48353c, #6f5964, #48353c);
+.center {
+    background-image: linear-gradient(to bottom, #301E24, #6f5964,#6f5964, #301E24);
     display:inline-block;
 }
 main img{
-    height: 236px; /*242 con borde*/
+    height: 236px; /*244 con borde*/
     width: 352px;
     border: 4px solid #c0c0c0;
     margin: 20px;
     float:inline-start;
 }
-
 .information{
     display:inline-block;
     width: 380px;
@@ -50,4 +47,60 @@ main img{
     background-image: linear-gradient(to right, white, #dacbd9);
     padding: 10px 7px;
     font-size: 11pt;
+}
+.item{
+    width: 226px;
+    float:left;
+    margin: 0px 20px;
+}
+.item img{
+    max-width: 100%;
+}
+.image{
+    height: 124.69px;
+}
+div .item .information_text{
+    font-size: 9pt;
+    margin-top: -4px;
+    min-height: 140px;
+}
+table{
+    background-image: linear-gradient(to right, white, #dacbd9);
+    padding: 5px;
+}
+td{
+    padding: 3px 3px;
+}
+.back{
+    background-image: linear-gradient(to right, white, #dacbd9);
+    display: flex;
+    justify-content: center;
+}
+.finalText{
+    color: white;
+    font-size: 8pt;
+    font-weight: bold;
+    background-color: #407D61;
+    display: inline-block;
+    padding: 4.5px;
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 13px;
+}
+footer{
+    text-align: center;
+    margin: 5px;
+    font-size: 10pt;
+    align-items: center;
+    
+}
+.rrss{
+    margin-top: 10px;
+    font-style: italic;
+}
+.imgFooter{
+    height: 17px;
+    vertical-align: middle;
+    padding-left: 5px;
 }
