@@ -1,0 +1,21 @@
+*{
+    outline: 1px solid red;
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-color:#245076;
+    display:flex;
+    max-width:970px;
+    margin: auto;
+    /* border: 1px solid black; */
+}
+.python {
+    width: 400px;
+}
+header {
+    display:flex;
+}
+p {
+    justify-content:flex-end;
+}
