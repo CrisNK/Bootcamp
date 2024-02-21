@@ -81,6 +81,7 @@ section{
 }
 .section-links{
     display:flex;
+    justify-content:center;
     flex-direction: column;
     list-style-type:none;
     width: 200px;
@@ -93,4 +94,22 @@ section{
 li {
     color:#e6c539;
     white-space:pre-wrap;
+}
+section div {
+    width:500px;
+    text-align:center;
+}
+section div h6 {
+    display:block;
+    color:white;
+    font-weight:lighter;
+}
+section div h4 {
+    display:block;
+    color:#ffd42e;
+    font-weight:lighter;
+}
+section div h5{
+    color:white;
+    font-weight:lighter;
 }
