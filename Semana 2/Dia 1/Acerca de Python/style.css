@@ -16,6 +16,7 @@ header {
 }
 .python {
     width:300px;
+    margin-left:30px;
 }
 .container-header {
     display:inline;
@@ -69,7 +70,7 @@ header {
     border-radius:5px;
     box-shadow:2px 2px 1.5px rgba(0, 0, 0, 0.5);
 }
-nav ul a {
+nav a {
     display:flex;
     color: white;
     text-decoration:none;
@@ -93,7 +94,7 @@ section{
     justify-content: center;
     padding-bottom:10px;
 }
-li {
+section li {
     color:#e6c539;
     white-space:pre-wrap;
 }
@@ -102,14 +103,14 @@ li {
     text-align:center;
     margin-top:15px;
 }
-section div h6 {
+section h6 {
     display:block;
     color:white;
     font-weight:lighter;
     margin-bottom:10px;
     font-size:10.4pt;
 }
-section div h4 {
+section h4 {
     display:block;
     color:#ffd42e;
     font-weight:lighter;
@@ -117,9 +118,36 @@ section div h4 {
     font-style:oblique;
     font-size:14pt;
 }
-section div h5{
+section h5{
     color:white;
     font-weight:lighter;
     font-size:12pt;
     margin-bottom:20px;
+}
+article {
+    background-color:white;
+    display:flex;
+    justify-content:center;
+    width:800px;
+    margin: 0 auto;
+}
+.getting-started {
+    align-items:center;
+    text-align:center;
+}
+.getting-started h4 {
+    font-size: 14pt;
+    font-weight:bold;
+}
+.getting-started p {
+    font-size: 10pt;
+}
+.getting-started ul {
+    font-size: 10pt;
+    text-align:center;
+    list-style:square;
+    list-style-position:inside;
+}
+.getting-started a {
+    text-decoration:none;
 }
