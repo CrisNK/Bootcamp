@@ -75,5 +75,22 @@ nav ul a {
     text-decoration:none;
     padding: 10px;
 }
-
-/* list-style-position: inside; */
+section{
+    display:flex;
+    justify-content:center;
+}
+.section-links{
+    display:flex;
+    flex-direction: column;
+    list-style-type:none;
+    width: 200px;
+}
+.section-links a {
+    display:inline-flex;
+    color: white;
+    justify-content: center;
+}
+li {
+    color:#e6c539;
+    white-space:pre-wrap;
+}
