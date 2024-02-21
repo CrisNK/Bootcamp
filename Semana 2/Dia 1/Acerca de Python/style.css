@@ -8,18 +8,54 @@ body {
     background-color:#245076;
     max-width:970px;
     margin: auto;
-    /* border: 1px solid black; */
+    border: 1px solid black;
+}
+header {
+    position: relative;
+    margin:10px;
 }
 .python {
-    width: 400px;
+    width: 300px;
 }
-header p {
-    display:flex;
-    justify-content:flex-end;
+.container-header {
+    display: inline;
+    position: absolute;
+    right:0;
+}
+.text-size {
+    display:block;
+    direction:rtl;
     color:white;
-    margin-top: 10px;
     font-size:smaller;
+    white-space: pre-wrap;
+    margin-bottom: 5px;
+    margin-right: 30px;
 }
-header a {
+.link-text-size {
     color: #d2b100;
+}
+.search{
+    background-color: #444444;
+    padding: 10px 30px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.6);
+}
+.search input {
+    height: 25px;
+    box-shadow: 1px 1px 1.5px rgba(0, 0, 0, 0.5);
+}
+.search input::placeholder{
+    text-align:center;
+}
+.search button {
+    color: white;
+    background-color:#245076;
+    padding: 5px 7px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1.5px rgba(0, 0, 0, 0.5);
+    cursor:pointer;
+}
+.search button:active{
+    color: gray;
+    background-color:#1d2c3c;
 }
