@@ -81,35 +81,44 @@ section{
 }
 .section-links{
     display:flex;
-    justify-content:center;
+    text-align:center;
     flex-direction: column;
     list-style-type:none;
     width: 200px;
+    margin-top:30px;
 }
 .section-links a {
     display:inline-flex;
     color: white;
     justify-content: center;
+    padding-bottom:10px;
 }
 li {
     color:#e6c539;
     white-space:pre-wrap;
 }
-section div {
-    width:500px;
+.section-text {
+    width:600px;
     text-align:center;
+    margin-top:15px;
 }
 section div h6 {
     display:block;
     color:white;
     font-weight:lighter;
+    margin-bottom:10px;
+    font-size:10.4pt;
 }
 section div h4 {
     display:block;
     color:#ffd42e;
     font-weight:lighter;
+    margin-bottom:10px;
+    font-style:oblique;
+    font-size:14pt;
 }
 section div h5{
     color:white;
     font-weight:lighter;
+    font-size:12pt;
 }
