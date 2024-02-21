@@ -59,3 +59,21 @@ header {
     color: gray;
     background-color:#1d2c3c;
 }
+.menu-list {
+    display:flex;
+    background-image: linear-gradient(to bottom, #3575ad, #487ead,#3575ad);
+    width:800px;
+    justify-content:space-evenly;
+    margin: 0 auto;
+    list-style-type:none;
+    border-radius:5px;
+    box-shadow: 2px 2px 1.5px rgba(0, 0, 0, 0.5);
+}
+nav ul a {
+    display:flex;
+    color: white;
+    text-decoration:none;
+    padding: 10px;
+}
+
+/* list-style-position: inside; */
