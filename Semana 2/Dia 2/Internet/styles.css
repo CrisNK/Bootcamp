@@ -9,7 +9,6 @@ body {
 }
 .first-header{
     display: flex;
-
     align-items:center;
     margin-bottom:-15px;
 }
@@ -23,13 +22,98 @@ header h1 {
     font-weight: 400;
     color:#474747;
 }
-h1 span {
+header span {
     color: #22659e;
 }
-h2 {
+header h2 {
     color:white;
     padding:10px;
     padding-left:20px;
-    font-weight: 300;
+    font-weight:300;
     background:linear-gradient(to bottom, #25679f, #5182ad,#25679f);
+}
+aside {
+    margin:20px 5px;
+    width:13%;
+}
+.text-aside h4 {
+    margin-bottom:10px;
+}
+.text-aside h4 span {
+    color:red;
+}
+.text-aside h5 span {
+    color:#22659e;
+}
+.buttons {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    padding: 20px 0px;
+    border-bottom: 1px solid #aaaaaa;
+}
+.watch-a-video, .more-resources {
+    font-size:medium;
+    color:white;
+    padding:6px 0px;
+    border-radius:5px;
+    border:none;
+    cursor:pointer;
+    box-shadow: 1px 1px 1.5px black;
+}
+.watch-a-video {
+    background:linear-gradient(to bottom, #6499c5, #24669f);
+    margin-bottom: 5px;
+}
+.watch-a-video:active {
+    background:linear-gradient(to bottom, #24669f, #6499c5);
+}
+.more-resources {
+    background:linear-gradient(to bottom, #eaac54, #f07200);
+}
+.more-resources:active {
+    background:linear-gradient(to bottom, #f07200, #eaac54);
+}
+.advertising-background {
+    background-image: url(./images/ad_background.png);
+    background-size:auto;
+}
+.content-image {
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+}
+.content-image h2 {
+    color:white;
+    margin:20px 10px 0px 10px;
+    text-align:center;
+    font-weight:400;
+}
+.content-image img {
+    width:45%;
+}
+.content-image button {
+    background:linear-gradient(to bottom, #77d0df, #00c1df);
+    width:85%;
+    height:30px;
+    font-size:12pt;
+    color:white;
+    border-radius:5px;
+    border:none;
+    cursor:pointer;
+    margin:10px 0px 40px 0px;
+    box-shadow: 1px 1px 1.5px black;
+}
+.content-image button:active {
+    background:linear-gradient(to bottom, #00c1df, #77d0df);
+}
+.content-image span {
+    font-size:7pt;
+    font-weight:900;
+}
+#span1{
+    color:#7edbea;
+}
+#span2{
+    color:#bfedf5;
 }
