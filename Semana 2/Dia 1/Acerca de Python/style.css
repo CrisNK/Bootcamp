@@ -158,16 +158,28 @@ article ul {
     flex-direction:column;
     font-size:10pt;
     text-align:center;
-    list-style:none;
-    list-style-position:inside;
-}
-article li::before {
-    content:"￭";
-    margin-right:10px;
+    list-style:square;
 }
 article a {
     display:inline-block;
     align-items:start;
     color:#81afd9;
     text-decoration:none;
+}
+footer {
+    background:linear-gradient(to bottom,#245076, #275881, #295e8a);
+    color: #629aca;
+    padding-bottom:4px;
+}
+footer div {
+    height: 60px;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:flex-end;
+    margin-bottom:10px;
+}
+.copyright {
+    display:flex;
+    justify-content:center;
+    font-size:7pt;
 }
