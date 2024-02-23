@@ -11,6 +11,7 @@ body {
 }
 .main-with-aside {
     display:flex;
+    background:linear-gradient(to bottom, #e3e3e3, white, white, white, white);
 }
 .first-header{
     display: flex;
@@ -179,7 +180,7 @@ main {
 .cyan-color {
     color:#0097ae;
 }
-ul li {
+li {
     margin-top:8px;
     margin-left:40px;
 }
