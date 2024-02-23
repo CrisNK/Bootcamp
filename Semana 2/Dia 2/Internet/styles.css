@@ -8,7 +8,9 @@ body {
     margin:auto;
     justify-content:center;
     width: 1000px;
-    
+}
+.main-with-aside {
+    display:flex;
 }
 .first-header{
     display: flex;
@@ -36,6 +38,8 @@ header h2 {
     background:linear-gradient(to bottom, #25679f, #5182ad,#25679f);
 }
 aside {
+    display:flex;
+    flex-direction:column;
     margin:20px 5px;
     width:20%;
 }
@@ -114,9 +118,13 @@ aside {
     font-size:7pt;
     font-weight:900;
 }
-#span1{
+#span1 {
     color:#7edbea;
 }
-#span2{
+#span2 {
     color:#bfedf5;
+}
+.header-main {
+    display:flex;
+    width:80%
 }
