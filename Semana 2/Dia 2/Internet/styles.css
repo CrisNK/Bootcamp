@@ -124,7 +124,71 @@ aside {
 #span2 {
     color:#bfedf5;
 }
+main {
+    width:80%;
+    margin: 0px 15px 0px 50px;
+}
 .header-main {
     display:flex;
-    width:80%
+    padding-bottom:15px;
+    border-bottom:1px solid #aaaaaa;
+}
+.home {
+    display:flex;
+    margin:10px 10px 10px 0px;
+    width:50%
+}
+.home img {
+    width:20px;
+    height:20px;
+}
+.home a {
+    color:#22659e;
+    margin-top:4px;
+    margin-left:4px;
+    text-decoration:none;
+}
+.contact {
+    display:flex;
+    width:100%;
+    text-align:right;
+    justify-content:flex-end;
+}
+.contact img {
+    width:40px;
+    height:40px;
+    margin:5px 5px;
+}
+.contact-data {
+    display:flex;
+    flex-direction:column;
+}
+.contact-data h6 {
+    font-weight:100;
+}
+.contact-data h2 {
+    color:#00bfdf;
+}
+.title-main {
+    color:#22659e;
+    padding:5px 0px;
+}
+.weight-bold {
+    font-weight:bold;
+}
+.cyan-color {
+    color:#0097ae;
+}
+ul li {
+    margin-top:8px;
+    margin-left:40px;
+}
+.client-server {
+    display:flex;
+    width:100%;
+    justify-content:center;
+}
+.client-server img {
+    width:400px;
+    margin:20px;
 }
