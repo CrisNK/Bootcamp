@@ -28,11 +28,11 @@ span {
 .desktop {
     display:block;
 }
-.mobile, .tablet {
+.phone, .tablet {
     display:none;
 }
 @media only screen and (max-width:480px){
-    .mobile {
+    .phone {
         display:block;
     }
     .tablet, .desktop {
@@ -40,7 +40,7 @@ span {
     }
 }
 @media only screen and (min-width:481px) and (max-width:1023px) {
-    .mobile, .desktop {
+    .phone, .desktop {
         display:none;
     }
     .tablet {
@@ -48,7 +48,7 @@ span {
     }
 }
 @media only screen and (min-width:1024px) {
-    .mobile, .tablet {
+    .phone, .tablet {
         display:none;
     }
     .desktop {
