@@ -1,6 +1,5 @@
 /*CSS reset settings here*/
 *{
-    /* outline: 1px solid violet; */
     margin: 0px;
     padding: 0px;
    }
@@ -8,37 +7,24 @@
     width: 950px;
     background-color: silver;
     margin: 0px auto;
-    padding:20px;
    }
    #header{
     min-height: 150px;
     background-color: green;
-    margin-bottom:20px;
-   }
-   #center-content{
-    display:flex;
-    justify-content:space-between;
    }
    #navigation{
-    display:flex;
-    height: 300px;
+    min-height: 300px;
     width: 200px;
     background-color: blue;
-    }
+   }
    #main_content{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:space-evenly;
-    align-items:flex-start;
     min-height: 400px;
     width: 700px;
     background-color: red;
    }
    .subcontents{
-    display:flex;
-    margin-top:20px;
     min-height: 200px;
-    min-width: 210px;
+    width: 210px;
     background-color: yellow;
    }
    #advertisement{
@@ -46,23 +32,23 @@
     width: 660px;
     background-color: purple;
    }
-   @media only screen and (max-width:480px){
-    #navigation{
-     display:none;
-    }
-    #main_content{
-     display:flex;
-     flex-direction:column;
-    }
-    .subcontents{
-     margin:5px;
-    }
+   .col{
+    display:inline-block;
+    vertical-align:top;
+    box-sizing:border-box;
+    padding:5px;
    }
-   @media only screen and (min-width:481px) and (max-width:1023px){
-    #navigation{
-        display:none;
-    }
-    #main-content{
+   .row{
+    padding:10px;
+   }
+   @media screen and (min-width:1024px){
+    .lg-4{
         width:100%;
+    }
+    .lg-3{
+        width:75%;
+    }
+    .lg-1{
+        width:25%;
     }
    }
