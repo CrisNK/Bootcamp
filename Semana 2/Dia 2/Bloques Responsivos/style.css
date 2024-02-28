@@ -53,7 +53,7 @@
         width:25%;
     }
    }
-   @media screen and (min-width:480px) and (max-width:1023px){
+   @media screen and (min-width:481px) and (max-width:1023px){
     .med-0{
         display:none;
     }
