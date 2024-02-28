@@ -62,7 +62,7 @@
     }
     .med-1{
         display:flex;
-        width:45%;
+        width:44%;
     }
     #main_content{ /*? duda: por que necesito esto para que se llene la página? */
         width: 100%; 
@@ -76,6 +76,36 @@
     }
     .subcontents{
         margin:10px;
+    }
+    #advertisement{
+        width:100%;
+    }
+   }
+   @media screen and (max-width:480px){
+    .sm-0{
+        display:none;
+    }
+    .sm-1{
+        width:100%;
+    }
+    .sm-3{
+        width:50%;
+    }
+    .sm-4{
+        width:100%;
+    }
+    #main_content{
+        display:flex;
+        flex-direction:column;
+        padding:0px;
+        width:100%;
+        box-sizing:border-box;
+        justify-content:center;
+    }
+    .row{
+        display:flex;
+        flex-direction:column;
+        gap:10px;
     }
     #advertisement{
         width:100%;
