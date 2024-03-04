@@ -1,0 +1,44 @@
+body {
+  background-color: green;
+}
+h1 {
+  width: 500px;
+  font-size: 30px;
+  color: green;
+  background-color: white;
+  padding: 10px;
+}
+.fontStyle {
+  font-family: sans-serif;
+  background-color: white;
+  color: blue;
+  padding: 20px;
+}
+h2 {
+  font-size: 40px;
+  font-family: sans-serif;
+  background-color: white;
+  color: blue;
+  padding: 20px;
+}
+p {
+  font-size: 40px;
+  font-family: sans-serif;
+  background-color: white;
+  color: blue;
+  padding: 20px;
+}
+header nav ul {
+  padding: 0;
+  margin: 0;
+}
+header nav ul li {
+  display: inline-block;
+}
+header nav ul li a {
+  padding: 5px;
+  background-color: lightcoral;
+  color: white;
+  text-decoration: none;
+  font-size: 40px;
+}
