@@ -59,8 +59,9 @@ body{
 .items-none{
   width:60px;
   height:60px;
+  display:flex;
 }
-.items-none.none2{
+.items-none.vertical{
   width:20px;
   height:60px;
   color:red;
