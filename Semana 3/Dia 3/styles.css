@@ -1,0 +1,36 @@
+body{
+    background-color:black;
+    margin:0px;
+}
+div#world{
+    position:relative;
+}
+div.row{
+    font-size: 0;
+}
+div.row div{
+    width:20px;
+    height:20px;
+    display:inline-block;
+}
+div.brick{
+    background-color:blue;
+}
+div.coin{
+    background:url('./assets/coin.gif');
+    background-repeat:no-repeat;
+    background-position:center;
+}
+div#pacman{
+    background:url('./assets/pacman.gif');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    transform:scaleX(-1);
+    width:20px;
+    height: 20px;
+    position:absolute;
+}
+div.empty{
+    height:20px;
+}
