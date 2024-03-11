@@ -66,13 +66,23 @@ displayWorld();
 displayPacman();
 displayHealt();
 document.onkeydown = function (e) {
+    console.log(pacman.x);
+    console.log(pacman.y);
     if (e.keyCode == 37 && (world[pacman.y][pacman.x - 1] != 2)) { // flecha izquierda
-        pacman.x--;
         document.getElementById('pacman').style.transform = 'rotate(0deg)';
+        if ((pacman.y == 7) && (pacman.x == 0)) { // implementación de teletransporte en los bordes vacíos del mapa
+            pacman.x = 18;
+        } else {
+        pacman.x--;
+        }
     }
     if (e.keyCode == 39 && (world[pacman.y][pacman.x + 1] != 2)) { // flecha derecha
-        pacman.x++;
         document.getElementById('pacman').style.transform = 'rotate(180deg)';
+        if ((pacman.y == 7) && (pacman.x == 18)) { // implementación de teletransporte en los bordes vacíos del mapa
+            pacman.x = 0;
+        } else {
+            pacman.x++;
+        }
     }
     if (e.keyCode == 38 && (world[pacman.y - 1][pacman.x] != 2)) { // flecha arriba
         pacman.y--;
@@ -93,5 +103,5 @@ document.onkeydown = function (e) {
         displayScore();
     }
     displayPacman();
-    console.log(e.keyCode);
+    // console.log(e.keyCode);
 }
