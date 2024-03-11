@@ -35,17 +35,29 @@ div.empty{
     height:20px;
 }
 div#score{
-    border:1px solid white;
-    width:30px;
+    display:inline-flex;
+    width:auto;
     height:30px;
-    color:white;
-    display:flex;
-    justify-content:center;
+    padding:0px 5px;
     align-items:center;
+    border:1px solid white;
+    color:white;
 }
 div.cherry{
     background:url('./assets/cherry.png');
     background-repeat:no-repeat;
     background-position:center;
     background-size:cover;
+}
+div#healt{
+    display:inline-flex;
+    width:auto;
+    height:30px;
+    padding:0px 5px;
+    align-items:center;
+    border:1px solid white;
+    color:white;
+}
+#heart{
+    width:20px;
 }

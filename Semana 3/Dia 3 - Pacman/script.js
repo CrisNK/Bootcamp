@@ -23,6 +23,8 @@ var pacman = {
 
 var score = 0;
 
+var healt = 3;
+
 function displayWorld() {
     var output = '';
 
@@ -52,10 +54,17 @@ function displayPacman() {
     document.getElementById('pacman').style.left = pacman.x * 20 + 'px';
 }
 function displayScore() {
-    document.getElementById('score').innerHTML = score;
+    document.getElementById('score').innerHTML = 'Puntuación: ' + score;
+}
+function displayHealt() {
+    document.getElementById('healt').innerHTML = 'Vidas restantes: ';
+    for (let i = 0; i < healt; i++){
+        document.getElementById('healt').innerHTML += '<img id="heart" src="./assets/heart.png" alt="heart">';
+    }
 }
 displayWorld();
 displayPacman();
+displayHealt();
 document.onkeydown = function (e) {
     if (e.keyCode == 37 && (world[pacman.y][pacman.x - 1] != 2)) { // flecha izquierda
         pacman.x--;
@@ -67,17 +76,17 @@ document.onkeydown = function (e) {
     }
     if (e.keyCode == 38 && (world[pacman.y - 1][pacman.x] != 2)) { // flecha arriba
         pacman.y--;
-        document.getElementById('pacman').style.transform = 'rotate(90deg)';   
+        document.getElementById('pacman').style.transform = 'rotate(90deg)';
     }
     if (e.keyCode == 40 && (world[pacman.y + 1][pacman.x] != 2)) { // flecha abajo
         pacman.y++;
-        document.getElementById('pacman').style.transform = 'rotate(270deg)';   
+        document.getElementById('pacman').style.transform = 'rotate(270deg)';
     }
     if (world[pacman.y][pacman.x] == 1 || world[pacman.y][pacman.x] == 3) {
         if (world[pacman.y][pacman.x] == 3) {
             score += 50;
         } else {
-            score+=10;
+            score += 10;
         }
         world[pacman.y][pacman.x] = 0;
         displayWorld();
