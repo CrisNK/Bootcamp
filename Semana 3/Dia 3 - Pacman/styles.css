@@ -61,3 +61,9 @@ div#healt{
 #heart{
     width:20px;
 }
+div#ghost-1{
+    background:url('./assets/ghost-1.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+}

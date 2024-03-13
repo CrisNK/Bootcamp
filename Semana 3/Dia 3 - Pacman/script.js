@@ -5,7 +5,7 @@ var world = [
     [2, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 2],
     [2, 1, 2, 2, 1, 2, 1, 2, 2, 2, 2, 2, 1, 2, 1, 2, 2, 1, 2],
     [2, 1, 1, 1, 1, 2, 1, 0, 0, 0, 0, 0, 1, 2, 1, 1, 1, 1, 2],
-    [2, 2, 2, 2, 1, 1, 1, 2, 2, 0, 2, 2, 1, 1, 1, 2, 2, 2, 2],
+    [2, 2, 2, 2, 1, 1, 1, 2, 2, 4, 2, 2, 1, 1, 1, 2, 2, 2, 2],
     [0, 1, 1, 1, 1, 2, 1, 2, 0, 0, 0, 2, 1, 2, 1, 1, 1, 1, 0],
     [2, 2, 2, 2, 1, 2, 1, 2, 2, 2, 2, 2, 1, 2, 1, 2, 2, 2, 2],
     [2, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 2],
@@ -20,9 +20,13 @@ var pacman = {
     x: 1,
     y: 1
 };
-
+var ghost = [
+    {id:4, x:9,y:6},
+    {id:5, x:9,y:7},
+    {id:6, x:8,y:7},
+    {id:7, x:10,y:7},
+];
 var score = 0;
-
 var healt = 3;
 
 function displayWorld() {
@@ -31,6 +35,9 @@ function displayWorld() {
     for (var i = 0; i < world.length; i++) {
         output += "\n<div class='row'>";
         for (var j = 0; j < world[i].length; j++) {
+            if (world[i][j] == 4) {
+                output += "\n\t<div id='ghost-1'></div>"
+            }
             if (world[i][j] == 3) {
                 output += "\n\t<div class='cherry'></div>"
             }
@@ -62,8 +69,12 @@ function displayHealt() {
         document.getElementById('healt').innerHTML += '<img id="heart" src="./assets/heart.png" alt="heart">';
     }
 }
+function displayGhost() {
+    document.getElementById('ghost-1').style.background = "url('./assets/ghost-1.png');";
+}
 displayWorld();
 displayPacman();
+displayGhost();
 displayHealt();
 document.onkeydown = function (e) {
     console.log(pacman.x);
