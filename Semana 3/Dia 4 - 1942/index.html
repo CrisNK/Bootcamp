@@ -138,13 +138,13 @@
 		function detectCollision() {
 			for (var i = 0; i < enemies.length; i++) {
 				// Colisión de héroe con enemigos
-				if ((Math.abs(hero.x - (enemies[i].x + 10)) < 25) && (Math.abs(hero.y - enemies[i].y) == 0)) {
+				if ((Math.abs(hero.x - (enemies[i].x + 5)) < 20) && (Math.abs(hero.y - enemies[i].y) == 0)) {
 					score -= 500;
 				}
 				// Colisión de balas
 				for (var j = 0; j < bullets.length; j++) {
-					if ((Math.abs(bullets[j].x - (enemies[i].x + 10)) < 15) && (Math.abs(bullets[j].y - enemies[i].y) < 10)) {
-						console.log('bullet', i, 'and enemy', j, 'collided');
+					if ((Math.abs(bullets[j].x - (enemies[i].x + 5)) < 20) && (Math.abs(bullets[j].y - enemies[i].y) == 0)) {
+						score += 10;
 					}
 				}
 			}
