@@ -30,6 +30,14 @@
 			position: absolute;
 		}
 
+		.enemy2 {
+			background: url('1942.gif');
+			background-position: -151px -10px;
+			width: 30px;
+			height: 20px;
+			position: absolute;
+		}
+
 		.bullet {
 			background: url('1942.gif');
 			background-position: -185px -400px;
@@ -72,7 +80,7 @@
 			y: 400
 		};
 
-		var enemies = [{ x: 50, y: 50 }, { x: 250, y: 50 }, { x: 450, y: 250 }, { x: 750, y: 350 }, { x: 650, y: 350 }, { x: 850, y: 150 }, { x: 850, y: 150 }];
+		var enemies = [{ x: 50, y: 50 }, { x: 250, y: 50 }, { x: 450, y: 250 }, { x: 750, y: 350 }, { x: 650, y: 350 }, { x: 850, y: 150 }, { x: 750, y: 150 }, { x: 150, y: 100 }];
 
 		var bullets = [];
 
@@ -82,9 +90,10 @@
 		}
 		function displayEnemies() {
 			var output = '';
-			for (var i = 0; i < enemies.length; i++) {
+			for (var i = 0; i < enemies.length - 1; i++) {
 				output += "<div class='enemy1' style='top:" + enemies[i].y + "px; left:" + enemies[i].x + "px;'></div>";
 			}
+			output += "<div class='enemy2' style='top:" + enemies[enemies.length - 1].y + "px; left:" + enemies[enemies.length - 1].x + "px;'></div>";
 			document.getElementById('enemies').innerHTML = output;
 		}
 		function moveEnemies() {
@@ -113,7 +122,7 @@
 		}
 		function gameLoop() {
 			displayHero();
-			// moveEnemies();
+			moveEnemies();
 			displayEnemies();
 			moveBullets();
 			displayBullets();
