@@ -56,6 +56,14 @@
 			font-size: 30px;
 			font-family: Arial;
 		}
+
+		.explosion {
+			background: url('1942.gif'); 
+			background-position: -30px -10px;
+			width: 50px;
+			height: 50px;
+			position: absolute;
+		}
 	</style>
 </head>
 
@@ -63,12 +71,7 @@
 	<div id='container'>
 		<div id='hero'></div>
 		<div id='enemies'></div>
-		<div id='bullets'>
-			<div class='bullet' style='top:150px; left:200px;'></div>
-			<div class='bullet' style='top:250px; left:200px;'></div>
-			<div class='bullet' style='top:350px; left:200px;'></div>
-			<div class='bullet' style='top:450px; left:200px;'></div>
-		</div>
+		<div id='bullets'></div>
 	</div>
 
 	<div id='score'>0</div>
@@ -145,6 +148,9 @@
 				for (var j = 0; j < bullets.length; j++) {
 					if ((Math.abs(bullets[j].x - (enemies[i].x + 5)) < 20) && (Math.abs(bullets[j].y - enemies[i].y) == 0)) {
 						score += 10;
+						enemies.splice(i, 1);
+						bullets.splice(j, 1);
+						new Audio('./explosion.mp3').play();
 					}
 				}
 			}
