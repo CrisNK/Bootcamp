@@ -74,6 +74,8 @@
 
 		var enemies = [{ x: 50, y: 50 }, { x: 250, y: 50 }, { x: 450, y: 250 }, { x: 750, y: 350 }, { x: 650, y: 350 }, { x: 850, y: 150 }, { x: 850, y: 150 }];
 
+		var bullets = [];
+
 		function displayHero() {
 			document.getElementById('hero').style['top'] = hero.y + "px";
 			document.getElementById('hero').style['left'] = hero.x + "px";
@@ -94,16 +96,32 @@
 				}
 			}
 		}
+		function moveBullets() {
+			for (var i = 0; i < bullets.length; i++) {
+				bullets[i].y -= 5;
+				if (bullets[i].y < 0) {
+					bullets.shift();
+				}
+			}
+		}
+		function displayBullets() {
+			var output = '';
+			for (var i = 0; i < bullets.length; i++) {
+				output += "<div class='bullet' style='top:" + bullets[i].y + "px; left:" + bullets[i].x + "px;'></div>";
+			}
+			document.getElementById('bullets').innerHTML = output;
+		}
 		function gameLoop() {
 			displayHero();
 			moveEnemies();
 			displayEnemies();
+			moveBullets();
+			displayBullets();
 		}
 
 		setInterval(gameLoop, 20);
 
 		document.onkeydown = function (e) {
-			console.log(e.keyCode);
 			if (e.keyCode == 37) { // izquierda
 				hero.x -= 10;
 			}
@@ -116,8 +134,12 @@
 			if (e.keyCode == 40) { // abajo
 				hero.y += 10;
 			}
+			if (e.keyCode == 32) { // barra espaciadora
+				bullets.push({ x: hero.x + 6, y: hero.y - 15 });
+				displayBullets();
+			}
 			displayHero();
-			// console.log(hero);
+			console.log(e.keyCode);
 		}
 
 	</script>
