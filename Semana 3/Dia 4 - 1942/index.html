@@ -66,14 +66,33 @@
 
 <script>
 	var hero = {
-		x: 500,
+		x: 300,
 		y: 300
 	};
 
 	function displayHero(){
-		document.getElementById('hero').style['top'] = hero.x+"px";
-		document.getElementById('hero').style['left'] = hero.y+"px";
+		document.getElementById('hero').style['top'] = hero.y+"px";
+		document.getElementById('hero').style['left'] = hero.x+"px";
 	}
+
+	document.onkeydown = function(e){
+		console.log(e.keyCode);
+		if(e.keyCode == 37){ // izquierda
+			hero.x -= 10;
+		}
+		if(e.keyCode == 39){ // derecha
+			hero.x += 10;
+		}
+		if(e.keyCode == 38){ // arriba
+			hero.y -= 10;
+		}
+		if(e.keyCode == 40){ // abajo
+			hero.y += 10;
+		}
+		displayHero();
+		// console.log(hero);
+	}
+
 	displayHero();
 </script>
 
